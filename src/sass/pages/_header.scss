@@ -37,6 +37,10 @@
 
 .nav {
     margin-left: auto;
+
+    @include mq(mobile-only) {
+        display: none;
+    }
 }
 
 .nav__list {

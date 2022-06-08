@@ -1,16 +1,10 @@
 body {
-    padding-top: 60px;
-
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03;
 
-    background-color: aquamarine;
-
-    @include mq(tablet) {
-        padding-top: 80px;
-    }
+    background-color: var(--main-gray);
 }
 
 html,
@@ -54,4 +48,9 @@ img {
 
 .main-content {
     flex-grow: 1;
+    padding-top: 60px;
+
+    @include mq(tablet) {
+        padding-top: 80px;
+    }
 }
