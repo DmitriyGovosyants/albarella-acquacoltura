@@ -5,10 +5,14 @@
 // #b9aa71 (светлый беж)
 
 :root {
+    --animation-duration: 250ms;
+    --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     --main-green: #02302d;
     --main-green-dark: #23301d;
     --main-black: #081617;
     --main-gray: rgba(116, 132, 108, 0.3);
+    --main-gray-2: #74846c;
     --main-gray-light: #b9aa71;
     // --text-main-color: #000000;
     // --text-second-color: #907e82;

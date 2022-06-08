@@ -1,0 +1,41 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--main-green);
+
+    pointer-events: none;
+    transform: scale(0);
+    transition: transform var(--animation-duration) var(--animation-timing-function);
+
+    &.is-open {
+        pointer-events: auto;
+        transform: scale(1);
+    }
+}
+
+.mobile-menu__btn-open {
+    margin-left: auto;
+
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+.mobile-menu__btn-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.mobile-menu__content {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
