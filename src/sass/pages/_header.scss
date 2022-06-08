@@ -4,9 +4,8 @@
     left: 0;
     width: 100%;
     height: 60px;
-    // z-index: 2;
 
-    background-color: rgb(18, 25, 31);
+    background-color: var(--main-green);
     border-bottom: 1px solid tomato;
 
     @include mq(tablet) {
@@ -33,7 +32,7 @@
 
 .logo__text {
     margin-left: 10px;
-    color: goldenrod;
+    color: var(--main-gray-light);
 }
 
 .nav {
@@ -51,5 +50,5 @@
 }
 
 .nav__link {
-    color: goldenrod;
+    color: var(--main-gray-light);
 }

@@ -5,7 +5,6 @@ body {
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03;
-    color: black;
 
     background-color: aquamarine;
 
@@ -26,7 +25,6 @@ img {
 }
 
 .container {
-    width: 100%;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -46,4 +44,14 @@ img {
         padding-left: 115px;
         padding-right: 115px;
     }
+}
+
+.footer-fixed-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% + 1px);
+}
+
+.main-content {
+    flex-grow: 1;
 }
