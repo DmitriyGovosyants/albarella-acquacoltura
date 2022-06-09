@@ -19,7 +19,21 @@
     }
 }
 
-.logo__img {}
+.logo__img {
+    &--animate {
+        animation: logo 1000ms var(--animation-timing-function);
+        
+            @keyframes logo {
+                0% {
+                    transform: scale(1.1);
+                }
+        
+                100% {
+                    transform: scale(1.0);
+                }
+            }
+    }
+}
 
 .logo__text {
     text-align: center;
