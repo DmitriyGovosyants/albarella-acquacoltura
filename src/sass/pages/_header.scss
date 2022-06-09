@@ -28,10 +28,16 @@
     display: flex;
     align-items: center;
     max-width: 150px;
+
+    font-family: Roboto Slab, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
 }
 
 .logo__text {
     margin-left: 10px;
+
+    text-align: center;
     color: var(--main-gray-light);
 }
 
@@ -40,6 +46,10 @@
 
     @include mq(mobile-only) {
         display: none;
+    }
+
+    @include mq(desktop) {
+        font-size: 20px;
     }
 }
 
