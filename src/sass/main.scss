@@ -1,9 +1,6 @@
-@import './basic/fonts';
-@import './basic/discharges';
-@import './utils/variables';
-@import './utils/mixins';
-@import './basic/global';
-@import './components/mobile-menu';
+@import './utils/module';
+@import './basic/module';
+@import './components/module';
 @import './pages/header';
 @import './pages/hero';
 @import './pages/footer';

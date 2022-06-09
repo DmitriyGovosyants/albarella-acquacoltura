@@ -1,7 +1,7 @@
 const refs = {
-    mobileMenu: document.querySelector('.js-mobile-menu'),
-    openMenuBtn: document.querySelector('.js-mobile-menu-btn-open'),
-    closeMenuBtn: document.querySelector('.js-mobile-menu-btn-close'),
+    mobileMenu: document.querySelector('.js-mob-menu'),
+    openMenuBtn: document.querySelector('.js-mob-menu-btn-open'),
+    closeMenuBtn: document.querySelector('.js-mob-menu-btn-close'),
 }
 
 const handleMobileMenuOpen = () => {

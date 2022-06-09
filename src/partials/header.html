@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container header__container">
     <a class="logo" href="#!">
-      <img src="images/logo.png" alt="Logo" width="50" height="50" />
+      <img class="logo__img" src="images/logo.png" alt="Logo" width="50" height="50" />
       <span class="logo__text">Albarella Acquacoltura</span>
     </a>
     <nav class="nav">
@@ -15,26 +15,37 @@
       </ul>
     </nav>
     <button
-      class="mobile-menu__btn-open js-mobile-menu-btn-open"
+      class="mob-menu__btn-open js-mob-menu-btn-open"
       type="button"
       aria-expanded="false"
       aria-label="mobile-menu-open"
     >
-      Click
+        <svg class="mob-menu__icon-open" width="60" height="60">
+            <use href="./images/icons.svg#icon-open-mobile-menu"></use>
+        </svg>
     </button>
-    <div class="mobile-menu js-mobile-menu">
+    <div class="mob-menu js-mob-menu">
       <button
-        class="mobile-menu__btn-close js-mobile-menu-btn-close"
+        class="mob-menu__btn-close js-mob-menu-btn-close"
         type="button"
         aria-label="mobile-menu-close"
       >
-        Click
+        <svg class="mob-menu__icon-close" width="60" height="60">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+        </svg>
       </button>
-      <div class="mobile-menu__content">
-        <ul>
-          <li>
-            <a href="">Hello</a>
-          </li>
+      <div class="mob-menu__content container">
+        <a class="logo logo--middle" href="#!">
+            <img class="logo__img" src="images/logo.png" alt="Logo" width="50" height="50" />
+            <span class="logo__text">Albarella Acquacoltura</span>
+        </a>
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item"><a class="mob-menu__link" href="#!">Home</a></li>
+            <li class="mob-menu__item"><a class="mob-menu__link" href="#!">Products</a></li>
+            <li class="mob-menu__item"><a class="mob-menu__link" href="#!">Facilities</a></li>
+            <li class="mob-menu__item"><a class="mob-menu__link" href="#!">About</a></li>
+            <li class="mob-menu__item"><a class="mob-menu__link" href="#!">Careers</a></li>
+            <li class="mob-menu__item"><a class="mob-menu__link" href="#!">Contacts</a></li>
         </ul>
       </div>
     </div>
