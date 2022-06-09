@@ -5,4 +5,4 @@ const e={mobileMenu:document.querySelector(".js-mob-menu"),openMenuBtn:document.
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu");
 },{"./sass/main.scss":"clu1","./js/mobile-menu":"sByI"}]},{},["Focm"], null)
-//# sourceMappingURL=/albarella-acquacoltura/src.4ff35d9e.js.map
+//# sourceMappingURL=/albarella-acquacoltura/src.7543f149.js.map
