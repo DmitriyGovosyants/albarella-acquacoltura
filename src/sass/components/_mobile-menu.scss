@@ -83,12 +83,14 @@
     line-height: 40px;
     color: var(--main-gray-light);
     border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
     &:focus {
-        background-color: white;
+        background-color: rgb(235, 235, 235);
         color: var(--main-green);
     }
 }
