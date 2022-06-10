@@ -12,6 +12,10 @@ body {
     height: 100%;
 }
 
+// html {
+//     scroll-behavior: smooth;
+// }
+
 img {
     display: block;
     max-width: 100%;
@@ -49,13 +53,14 @@ img {
     display: flex;
     flex-direction: column;
     height: calc(100% + 1px);
+
+    padding-top: 60px;
+    
+    @include mq(tablet) {
+        padding-top: 80px;
+    }
 }
 
 .main-content {
     flex-grow: 1;
-    padding-top: 60px;
-
-    @include mq(tablet) {
-        padding-top: 80px;
-    }
 }
