@@ -29,6 +29,6 @@ const handleMobMenuAnchorTo = e => {
 
 refs.openMenuBtn.addEventListener('click', handleMobMenuOpen);
 refs.closeMenuBtn.addEventListener('click', handleMobMenuClose);
-window.matchMedia('(min-width: 768px)').addEventListener('change', handleMobMenuIfTabletClose);
+window.matchMedia('(min-width: 1280px)').addEventListener('change', handleMobMenuIfTabletClose);
 
 refs.mobileMenuNav.addEventListener('click', handleMobMenuAnchorTo);

@@ -3,12 +3,12 @@ const anchors = document.querySelectorAll('a[href*="#"]');
 const handleAnchorTo = e => {
     e.preventDefault();
     
-    const linkName = e.target.dataset.id;
-    const elem = document.querySelector(`#${linkName}`);
+    const anchorName = e.target.dataset.id;
+    const anchor = document.querySelector(`#${anchorName}`);
       
     window.scroll({
         left: 0,
-        top: elem.offsetTop - 80,
+        top: anchor.offsetTop - 80,
         behavior: 'smooth'
     });
 }

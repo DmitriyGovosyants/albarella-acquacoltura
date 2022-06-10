@@ -17,7 +17,7 @@
 
     font-size: 16px;
 
-    @include mq(mobile-only) {
+    @include mq(notDesktop) {
         display: none;
     }
 

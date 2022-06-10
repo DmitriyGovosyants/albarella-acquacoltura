@@ -27,7 +27,7 @@
 
     background-color: transparent;
     
-    @include mq(tablet) {
+    @include mq(desktop) {
         display: none;
     }
 }
