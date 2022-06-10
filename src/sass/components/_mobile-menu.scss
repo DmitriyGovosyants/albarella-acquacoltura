@@ -82,10 +82,13 @@
     font-size: 28px;
     line-height: 40px;
     color: var(--main-gray-light);
-    transition: color var(--animation-duration) var(--animation-timing-function);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
     &:focus {
-        color: white;
+        background-color: white;
+        color: var(--main-green);
     }
 }
