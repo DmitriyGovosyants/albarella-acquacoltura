@@ -1,26 +1,34 @@
 export const langArr = {
-    "header-1" :  {
+    "nav-1" :  {
         "en": "home",
         "it": "casa",
     }, 
-    "header-2" :  {
+    "nav-2" :  {
         "en": "products",
         "it": "prodotti",
     },
-    "header-3" :  {
+    "nav-3" :  {
         "en": "facilities",
         "it": "strutture",
     },
-    "header-4" :  {
+    "nav-4" :  {
         "en": "about",
         "it": "circa",
     },
-    "header-5" :  {
+    "nav-5" :  {
         "en": "careers",
         "it": "carriere",
     },
-    "header-6" :  {
+    "nav-6" :  {
         "en": "contacts",
         "it": "contatti",
+    },
+    "footer-1" :  {
+        "en": "© 2022 - Albarella Acquacoltura",
+        "it": "© 2022 - Albarella Acquacoltura",
+    },
+    "footer-2" :  {
+        "en": "All Rights Reserved",
+        "it": "Tutti i diritti riservati",
     },
 }

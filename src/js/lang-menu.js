@@ -1,4 +1,4 @@
-import { langArr } from "./lang";
+import { langArr } from "./lang-data";
 const select = document.querySelector('.lang-menu');
 const allLang = ['en', 'it'];
 
@@ -15,7 +15,7 @@ function changeLanguage() {
     hash = hash.substr(1);
     console.log(hash);
     if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#en';
+        location.href = window.location.pathname + '#it';
         location.reload();
     }
     select.value = hash;

@@ -4,54 +4,46 @@
       <img class="logo__img logo__img--animate" src="images/logo.png" alt="Logo" width="50" height="50" />
       <span class="logo__text">Albarella Acquacoltura</span>
     </a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link lng-header-1" href="#header" data-id="header">home</a></li>
-        <li class="nav__item"><a class="nav__link lng-header-2" href="#products" data-id="products">products</a></li>
-        <li class="nav__item"><a class="nav__link lng-header-3" href="#facilities" data-id="facilities">facilities</a></li>
-        <li class="nav__item"><a class="nav__link lng-header-4" href="#about" data-id="about">about</a></li>
-        <li class="nav__item"><a class="nav__link lng-header-5" href="#careers" data-id="careers">careers</a></li>
-        <li class="nav__item"><a class="nav__link lng-header-6" href="#contacts" data-id="contacts">contacts</a></li>
-      </ul>
-    </nav>
-    <select class="lang-menu">
-      <option value="en" selected>EN</option>
-      <option value="it">IT</option>
-    </select>
-    <button
-      class="mob-menu__btn-open js-mob-menu-btn-open"
-      type="button"
-      aria-expanded="false"
-      aria-label="mobile-menu-open"
-    >
-        <svg class="mob-menu__icon-open" width="50" height="50">
-            <use href="./images/icons.svg#icon-open-mobile-menu"></use>
-        </svg>
+    <button class="menu__mob-btn-open js-menu-mob-btn-open" type="button" aria-expanded="false"
+      aria-label="mobile-menu-open">
+      <svg class="menu__mob-icon-open" width="50" height="50">
+        <use href="./images/icons.svg#icon-open-mobile-menu"></use>
+      </svg>
     </button>
-    <div class="mob-menu js-mob-menu">
-      <button
-        class="mob-menu__btn-close js-mob-menu-btn-close"
-        type="button"
-        aria-label="mobile-menu-close"
-      >
-        <svg class="mob-menu__icon-close" width="50" height="50">
-            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
-        </svg>
-      </button>
-      <div class="mob-menu__content container">
-        <a class="logo logo--middle" href="javascript:void(0);">
-            <img class="logo__img" src="images/logo.png" alt="Logo" width="50" height="50" />
-            <span class="logo__text">Albarella Acquacoltura</span>
-        </a>
-        <ul class="mob-menu__list js-mob-menu-nav">
-            <li class="mob-menu__item"><a class="mob-menu__link" href="#header" data-id="header">Home</a></li>
-            <li class="mob-menu__item"><a class="mob-menu__link" href="#products" data-id="products">Products</a></li>
-            <li class="mob-menu__item"><a class="mob-menu__link" href="#facilities" data-id="facilities">Facilities</a></li>
-            <li class="mob-menu__item"><a class="mob-menu__link" href="#about" data-id="about">About</a></li>
-            <li class="mob-menu__item"><a class="mob-menu__link" href="#careers" data-id="careers">Careers</a></li>
-            <li class="mob-menu__item"><a class="mob-menu__link" href="#contacts" data-id="contacts">Contacts</a></li>
+    <div class="menu js-menu-mob">
+      <div class="menu__container">
+        <nav class="nav">
+          <ul class="nav__list js-menu-mob-nav">
+            <li class="nav__item"><a class="nav__link lng-nav-1" href="#header" data-id="header">home</a></li>
+            <li class="nav__item"><a class="nav__link lng-nav-2" href="#products" data-id="products">products</a></li>
+            <li class="nav__item"><a class="nav__link lng-nav-3" href="#facilities" data-id="facilities">facilities</a></li>
+            <li class="nav__item"><a class="nav__link lng-nav-4" href="#about" data-id="about">about</a></li>
+            <li class="nav__item"><a class="nav__link lng-nav-5" href="#careers" data-id="careers">careers</a></li>
+            <li class="nav__item"><a class="nav__link lng-nav-6" href="#contacts" data-id="contacts">contacts</a></li>
+          </ul>
+        </nav>
+        <select class="lang-menu">
+          <option class="lang-menu__option" value="it" selected>IT</option>
+          <option value="en">EN</option>
+        </select>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--small" href="mailto:info@albarellaacquacoltura.com">
+              info@albarellaacquacoltura.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--big" href="tel:+393917014072">
+              +39 391 701 4072
+            </a>
+          </li>
         </ul>
       </div>
+      <button class="menu__mob-btn-close js-menu-mob-btn-close" type="button" aria-label="mobile-menu-close">
+        <svg class="menu__mob-icon-close" width="50" height="50">
+          <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
