@@ -2,7 +2,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    background-color: var(--main-green);
+    background-color: var(--bgc-main);
 }
 
 .footer__container {
@@ -20,7 +20,7 @@
 }
 
 .footer__text {
-    color: var(--main-gray-light);
+    color: var(--text-main);
 
     @include mq(mobile-only) {
         margin-bottom: 10px;
@@ -35,7 +35,7 @@
 }
 
 .footer__privacy {
-    color: var(--main-gray-light);
+    color: var(--text-main);
     @include mq(tablet) {
         margin-left: 5px;
     }

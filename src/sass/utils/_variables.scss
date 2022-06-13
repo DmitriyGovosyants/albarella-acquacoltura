@@ -8,12 +8,16 @@
     --animation-duration: 250ms;
     --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    --main-green: #02302d;
-    --main-green-dark: #23301d;
+    // --main-gray-2: #74846c;
+    --bgc-main: #02302d;
+    // --bgc-main: #3f50af;
+    --bgc-second: #23301d;
+    --bgc-third: rgba(116, 132, 108, 0.3);
     --main-black: #081617;
-    --main-gray: rgba(116, 132, 108, 0.3);
-    --main-gray-2: #74846c;
-    --main-gray-light: #b9aa71;
+
+    --text-main: #b9aa71;
+    // --text-main: #cfc59d;
+
     // --text-main-color: #000000;
     // --text-second-color: #907e82;
     // --text-third-color: #ffa5ba;

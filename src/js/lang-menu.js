@@ -1,31 +1,30 @@
-import { langArr } from "./lang-data";
-const select = document.querySelector('.lang-menu');
-const allLang = ['en', 'it'];
+import { langData } from "./lang-data";
+const langMenuBtns = document.querySelectorAll('.js-lang-menu-btn');
+const allLang = ['it', 'en'];
 
-select.addEventListener('change', changeURLLanguage);
+langMenuBtns.forEach(btn => btn.addEventListener('click', onLangToIt))
 
-function changeURLLanguage() {
-    let lang = select.value;
-    location.href = window.location.pathname + '#' + lang;
+function onLangToIt(e) {
+    const currentLang = e.target.textContent
+    location.href = window.location.pathname + '#' + currentLang;
     location.reload();
 }
 
 function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substr(1);
-    console.log(hash);
+
     if (!allLang.includes(hash)) {
         location.href = window.location.pathname + '#it';
         location.reload();
     }
-    select.value = hash;
     // document.querySelector('title').innerHTML = langArr['unit'][hash];
-    for (let key in langArr) {
+    for (let key in langData) {
         let elem = document.querySelector('.lng-' + key);
-        if (elem) {
-            elem.innerHTML = langArr[key][hash];
-        }
 
+        if (elem) {
+            elem.innerHTML = langData[key][hash];
+        }
     }
 }
 

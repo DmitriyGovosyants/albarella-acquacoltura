@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--main-green);
-    border-bottom: 1px solid var(--main-gray);
+    background-color: var(--bgc-main);
+    border-bottom: 1px solid var(--bgc-third);
 }
 
 .header__container {
@@ -15,10 +15,6 @@
 .menu {
     width: 280px;
 
-    @include mq(tablet) {
-        width: 500px;
-    }
-
     @include mq(notDesktop) {
         position: fixed;
         top: 0;
@@ -27,12 +23,16 @@
 
         height: 100%;
 
-        background-color: var(--main-green);
+        background-color: var(--bgc-main);
         border-bottom-left-radius: 50px;
 
         pointer-events: none;
         transform: translateX(120%);
         transition: transform var(--animation-duration) var(--animation-timing-function);
+    }
+
+    @include mq(tablet) {
+        width: 500px;
     }
 
     @include mq(desktop) {
@@ -78,7 +78,7 @@
 }
 
 .menu__mob-icon-open {
-    fill: var(--main-gray-light);
+    fill: var(--text-main);
     transition: fill var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
@@ -104,7 +104,7 @@
 }
 
 .menu__mob-icon-close {
-    fill: var(--main-gray-light);
+    fill: var(--text-main);
     transition: fill var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
@@ -138,15 +138,16 @@
     font-size: 28px;
     line-height: 40px;
     text-transform: capitalize;
-    color: var(--main-gray-light);
+    color: var(--text-main);
 
-    border-radius: 10px 20px 10px 20px;
+    border-radius: 10px 10px 30px 20px;
+    box-shadow: 1px 1px 1px var(--text-main);
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
     &:focus {
         background-color: rgb(235, 235, 235);
-        color: var(--main-green);
+        color: var(--bgc-main);
     }
 
     @include mq(desktop) {
@@ -162,22 +163,10 @@
 }
 
 .lang-menu {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
-    
-    font-size: 20px;
-    color: var(--main-gray-light);
-    background-color: transparent;
-    border-radius: 10px 20px 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
+    display: flex;
 
-    &:hover {
-        color: var(--main-green);
-        background-color: rgb(235, 235, 235);
+    @include mq(tablet) {
+        justify-content: center;
     }
 
     @include mq(notDesktop) {
@@ -185,17 +174,73 @@
     }
 
     @include mq(desktop) {
-        padding-right: 5px;
-        padding-left: 5px;
-        
-        font-size: 16px;
-        border-radius: 30px 10px 30px 10px;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-.lang-menu__option {
-    color: var(--main-gray-light);
-    background-color: var(--main-green);
+.lang-menu__item {
+    display: flex;
+
+    @include mq(notDesktop) {
+        &:not(:last-child) {
+            margin-right: 5px;
+    
+            &::after {
+                content: "";
+                transform: translateY(50%);
+                display: block;
+                width: 1px;
+                height: 50%;
+                margin-left: 5px;
+    
+                background-color: var(--text-main);
+            }
+        }
+    }
+
+    @include mq(desktop) {
+        
+        &:not(:last-child) {
+            flex-direction: column;
+            margin-bottom: 5px;
+    
+            &::after {
+                content: "";
+                transform: translateX(20%);
+                display: block;
+                width: 70%;
+                height: 1px;
+                margin-top: 5px;
+    
+                background-color: var(--text-main);
+            }
+        }
+    }
+}
+
+.lang-menu__btn {
+    padding: 10px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--text-main);
+
+    background-color: var(--bgc-main);
+    border-radius: 5px 10px 5px 10px;
+    transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
+
+    @include mq(desktop) {
+        padding: 5px;
+
+        font-size: 12px;
+        border-radius: 10px 5px 10px 5px;
+    }
+
+    &:hover {
+        color: var(--bgc-main);
+        background-color: rgb(235, 235, 235);
+    }
 }
 
 .contacts {
@@ -227,7 +272,7 @@
 
     font-size: 14px;
     font-weight: 700;
-    color: var(--main-gray-light);
+    color: var(--text-main);
 
     border-radius: 10px 20px 10px 20px;
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
@@ -235,7 +280,7 @@
     &:hover,
     &:focus {
         background-color: rgb(235, 235, 235);
-        color: var(--main-green);
+        color: var(--bgc-main);
     }
 
     @include mq(tablet) {

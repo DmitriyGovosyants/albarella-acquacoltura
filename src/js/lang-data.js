@@ -1,4 +1,4 @@
-export const langArr = {
+export const langData = {
     "nav-1" :  {
         "en": "home",
         "it": "casa",
