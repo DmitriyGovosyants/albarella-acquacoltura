@@ -4,7 +4,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 const e=document.querySelectorAll('a[href*="#"]'),t=e=>{e.preventDefault();const t=e.target.dataset.id,o=document.querySelector(`#${t}`);window.scroll({left:0,top:o.offsetTop-80,behavior:"smooth"})};for(let o of e)o.addEventListener("click",t);
 },{}],"sByI":[function(require,module,exports) {
 const e={mobileMenu:document.querySelector(".js-mob-menu"),openMenuBtn:document.querySelector(".js-mob-menu-btn-open"),closeMenuBtn:document.querySelector(".js-mob-menu-btn-close"),mobileMenuNav:document.querySelector(".js-mob-menu-nav")},n=()=>{e.mobileMenu.classList.add("is-open"),e.openMenuBtn.setAttribute("aria-expanded",!0),document.body.style.overflow="hidden"},t=()=>{e.mobileMenu.classList.remove("is-open"),e.openMenuBtn.setAttribute("aria-expanded",!1),document.body.style.overflow=""},o=e=>{e.matches&&t()},d=e=>{"A"===e.target.nodeName&&t()};e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",t),window.matchMedia("(min-width: 1280px)").addEventListener("change",o),e.mobileMenuNav.addEventListener("click",d);
-},{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/smooth-scroll"),require("./js/mobile-menu");
-},{"./sass/main.scss":"clu1","./js/smooth-scroll":"NcjB","./js/mobile-menu":"sByI"}]},{},["Focm"], null)
-//# sourceMappingURL=/albarella-acquacoltura/src.57fdbf18.js.map
+},{}],"tIaq":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.langArr=void 0;const e={"header-1":{en:"home",it:"casa"},"header-2":{en:"products",it:"prodotti"},"header-3":{en:"facilities",it:"strutture"},"header-4":{en:"about",it:"circa"},"header-5":{en:"careers",it:"carriere"},"header-6":{en:"contacts",it:"contatti"}};exports.langArr=e;
+},{}],"TEJc":[function(require,module,exports) {
+"use strict";var n=require("./lang");const e=document.querySelector(".lang-menu"),o=["en","it"];function t(){let n=e.value;location.href=window.location.pathname+"#"+n,location.reload()}function l(){let t=window.location.hash;t=t.substr(1),console.log(t),o.includes(t)||(location.href=window.location.pathname+"#en",location.reload()),e.value=t;for(let e in n.langArr){let o=document.querySelector(".lng-"+e);o&&(o.innerHTML=n.langArr[e][t])}}e.addEventListener("change",t),l();
+},{"./lang":"tIaq"}],"Focm":[function(require,module,exports) {
+"use strict";require("./sass/main.scss"),require("./js/smooth-scroll"),require("./js/mobile-menu"),require("./js/lang-menu");
+},{"./sass/main.scss":"clu1","./js/smooth-scroll":"NcjB","./js/mobile-menu":"sByI","./js/lang-menu":"TEJc"}]},{},["Focm"], null)
+//# sourceMappingURL=/albarella-acquacoltura/src.df57474f.js.map
