@@ -1,0 +1,22 @@
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+
+    display: none;
+    padding: 12px;
+
+    font-size: 18px;
+    color: var(--text-main);
+    
+    background-color: var(--bgc-fourth);
+    border-radius: 10px;
+    transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
+    outline: none;
+    
+    &:hover {
+        color: var(--accent-color);
+        background-color: var(--bgc-main);
+    }
+}
