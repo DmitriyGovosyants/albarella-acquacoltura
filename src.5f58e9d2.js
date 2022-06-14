@@ -11,4 +11,4 @@ const e={mobileMenu:document.querySelector(".js-menu-mob"),openMenuBtn:document.
 },{"./lang-data":"XIS3"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/smooth-scroll"),require("./js/mobile-menu"),require("./js/lang-menu");
 },{"./sass/main.scss":"clu1","./js/smooth-scroll":"NcjB","./js/mobile-menu":"sByI","./js/lang-menu":"TEJc"}]},{},["Focm"], null)
-//# sourceMappingURL=/albarella-acquacoltura/src.134b5379.js.map
+//# sourceMappingURL=/albarella-acquacoltura/src.5f58e9d2.js.map
