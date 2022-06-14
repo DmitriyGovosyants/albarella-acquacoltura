@@ -18,12 +18,12 @@ function changeLanguage() {
         location.href = window.location.pathname + '#it';
         location.reload();
     }
-    // document.querySelector('title').innerHTML = langArr['unit'][hash];
-    for (let key in langData) {
+    // document.querySelector('title').innerHTML = langArr[hash]['unit'];
+    for (let key in langData.en) {
         let elem = document.querySelector('.lng-' + key);
 
         if (elem) {
-            elem.innerHTML = langData[key][hash];
+            elem.innerHTML = langData[hash][key];
         }
     }
 }

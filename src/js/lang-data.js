@@ -1,38 +1,28 @@
 export const langData = {
-    "nav-1" :  {
-        "en": "home",
-        "it": "casa",
-    }, 
-    "nav-2" :  {
-        "en": "products",
-        "it": "prodotti",
+    "en": {
+        "nav-1": "home",
+        "nav-2": "products",
+        "nav-3": "facilities",
+        "nav-4": "about",
+        "nav-5": "careers",
+        "nav-6": "contacts",
+        "footer-bottom-1": "© 2022 - Albarella Acquacoltura",
+        "footer-bottom-2": "All Rights Reserved",
+        "back-to-top": "to top",
+        "footer-address": "Our Location",
+        "footer-socials": "Join Us",
     },
-    "nav-3" :  {
-        "en": "facilities",
-        "it": "strutture",
-    },
-    "nav-4" :  {
-        "en": "about",
-        "it": "circa",
-    },
-    "nav-5" :  {
-        "en": "careers",
-        "it": "carriere",
-    },
-    "nav-6" :  {
-        "en": "contacts",
-        "it": "contatti",
-    },
-    "footer-1" :  {
-        "en": "© 2022 - Albarella Acquacoltura",
-        "it": "© 2022 - Albarella Acquacoltura",
-    },
-    "footer-2" :  {
-        "en": "All Rights Reserved",
-        "it": "Tutti i diritti riservati",
-    },
-    "back-to-top" :  {
-        "en": "to top",
-        "it": "verso l'alto",
+    "it": {
+        "nav-1": "casa",
+        "nav-2": "prodotti",
+        "nav-3": "strutture",
+        "nav-4": "circa",
+        "nav-5": "carriere",
+        "nav-6": "contatti",
+        "footer-bottom-1": "© 2022 - Albarella Acquacoltura",
+        "footer-bottom-2": "Tutti i diritti riservati",
+        "back-to-top": "in cima alla",
+        "footer-address": "La nostra Posizione",
+        "footer-socials": "Unitevi",
     },
 }
