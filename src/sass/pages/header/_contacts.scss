@@ -29,6 +29,7 @@
     font-weight: 700;
     color: var(--text-main);
 
+    border: 1px solid transparent;
     border-radius: 10px 20px 10px 20px;
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
 

@@ -64,6 +64,7 @@
     color: var(--text-main);
 
     background-color: var(--bgc-main);
+    border: 1px solid transparent;
     border-radius: 5px 10px 5px 10px;
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
 

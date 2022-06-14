@@ -15,14 +15,14 @@
     font-size: 14px;
     color: black;
     
-    background-color: transparent;
+    background-color: var(--bgc-third);
     border-radius: 100px 0px 0px 0px;
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
     outline: none;
     
     &:hover {
         color: var(--accent-color);
-        background-color: var(--bgc-main);
+        background-color: var(--bgc-second);
     }
 }
 
