@@ -31,4 +31,8 @@ export const langData = {
         "en": "All Rights Reserved",
         "it": "Tutti i diritti riservati",
     },
+    "back-to-top" :  {
+        "en": "to top",
+        "it": "verso l'alto",
+    },
 }
