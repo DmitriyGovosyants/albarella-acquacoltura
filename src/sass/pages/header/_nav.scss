@@ -1,0 +1,48 @@
+.nav__list {
+    @include mq(desktop) {
+        display: flex;
+    }
+}
+
+.nav__item {
+    @include mq(desktop) {
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+.nav__link {
+    display: block;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    font-size: 28px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: var(--text-main);
+
+    border-radius: 10px 10px 30px 20px;
+    box-shadow: 1px 1px 1px var(--text-main);
+    transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--bgc-main);
+    }
+
+    @include mq(desktop) {
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+
+        font-size: 20px;
+
+        border-radius: 30px 10px 30px 10px;
+    }
+}

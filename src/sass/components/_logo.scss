@@ -23,15 +23,15 @@
     &--animate {
         animation: logo 1000ms var(--animation-timing-function);
         
-            @keyframes logo {
-                0% {
-                    transform: scale(1.1);
-                }
-        
-                100% {
-                    transform: scale(1.0);
-                }
+        @keyframes logo {
+            0% {
+                transform: scale(1.2);
             }
+    
+            100% {
+                transform: scale(1.0);
+            }
+        }
     }
 }
 

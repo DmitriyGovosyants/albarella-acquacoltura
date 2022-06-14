@@ -36,6 +36,7 @@
 
 .footer__privacy {
     color: var(--text-main);
+    
     @include mq(tablet) {
         margin-left: 5px;
     }

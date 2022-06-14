@@ -1,0 +1,100 @@
+.menu {
+    width: 280px;
+
+    @include mq(notDesktop) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+
+        height: 100%;
+
+        background-color: var(--bgc-main);
+        border-bottom-left-radius: 50px;
+
+        pointer-events: none;
+        transform: translateX(120%);
+        transition: transform var(--animation-duration) var(--animation-timing-function);
+    }
+
+    @include mq(tablet) {
+        width: 500px;
+    }
+
+    @include mq(desktop) {
+        width: 100%;
+    }
+
+    &.is-open {
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+}
+
+.menu__container {
+    @include mq(notDesktop) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    @include mq(tablet-only) {
+        text-align: center;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.menu__mob-btn-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+    background-color: transparent;
+
+    @include mq(desktop) {
+        display: none;
+    }
+}
+
+.menu__mob-icon-open {
+    fill: var(--text-main);
+    transition: fill var(--animation-duration) var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.menu__mob-btn-close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+
+    @include mq(desktop) {
+        display: none;
+    }
+}
+
+.menu__mob-icon-close {
+    fill: var(--text-main);
+    transition: fill var(--animation-duration) var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}

@@ -28,18 +28,17 @@ const handleOutsideMobMenuClose = (e) => {
     }
 }
 
-const handleMobMenuIfDesktopClose = e => {
-    if (!e.matches) return;
-    handleMobMenuClose();
-}
-
 const handleMobMenuAnchorTo = e => {
     if (e.target.nodeName !== "A") return;
     handleMobMenuClose();
 }
 
+const handleMobMenuIfDesktopClose = e => {
+    if (!e.matches) return;
+    handleMobMenuClose();
+}
+
 refs.openMenuBtn.addEventListener('click', handleMobMenuOpen);
 refs.closeMenuBtn.addEventListener('click', handleMobMenuClose);
-window.matchMedia('(min-width: 1140px)').addEventListener('change', handleMobMenuIfDesktopClose);
-
 refs.mobileMenuNav.addEventListener('click', handleMobMenuAnchorTo);
+window.matchMedia('(min-width: 1140px)').addEventListener('change', handleMobMenuIfDesktopClose);
