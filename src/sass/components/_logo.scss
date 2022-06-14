@@ -13,10 +13,6 @@
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
-    &--middle {
-        margin: 0 auto;
-    }
 }
 
 .logo__img {
@@ -37,5 +33,5 @@
 
 .logo__text {
     text-align: center;
-    color: var(--text-main);
+    color: var(--text-logo);
 }
