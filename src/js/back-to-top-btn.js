@@ -1,18 +1,18 @@
 import throttle from "lodash.throttle";
-const topBtn = document.querySelector('.top-btn');
+import {refs} from './refs';
 
 document.addEventListener('scroll', throttle(scrollTop, 500));
-topBtn.addEventListener('click', topFunction);
+refs.backToTopBtn.addEventListener('click', handleBackToTop);
 
 function scrollTop() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        topBtn.style.display = "block";
+        refs.backToTopBtn.style.display = "flex";
     } else {
-        topBtn.style.display = "none";
+        refs.backToTopBtn.style.display = "none";
     };
 }
 
-function topFunction() {
+function handleBackToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }

@@ -1,14 +1,10 @@
-const refs = {
-    mobileMenu: document.querySelector('.js-menu-mob'),
-    openMenuBtn: document.querySelector('.js-menu-mob-btn-open'),
-    closeMenuBtn: document.querySelector('.js-menu-mob-btn-close'),
-    mobileMenuNav: document.querySelector('.js-menu-mob-nav'),
-}
+import {refs} from './refs';
 
 const handleMobMenuOpen = () => {
     refs.mobileMenu.classList.add('is-open');
     refs.openMenuBtn.setAttribute('aria-expanded', true);
     document.body.style.overflow = "hidden";
+    refs.backToTopBtn.style.display = "none";
     document.addEventListener('click', handleOutsideMobMenuClose);
 }
 
