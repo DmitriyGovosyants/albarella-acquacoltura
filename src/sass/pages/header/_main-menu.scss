@@ -1,6 +1,6 @@
 .menu {
     width: 280px;
-
+    
     @include mq(notDesktop) {
         position: fixed;
         top: 0;
@@ -11,6 +11,7 @@
 
         background-color: var(--bgc-main);
         border-bottom-left-radius: 50px;
+        box-shadow: -3px 3px 10px rgb(211, 191, 191);
 
         pointer-events: none;
         transform: translateX(120%);
@@ -83,9 +84,18 @@
     align-items: center;
 
     background-color: transparent;
+    opacity: 0;
+    transform: translateX(-200%) rotateZ(0deg);
 
     @include mq(desktop) {
         display: none;
+    }
+
+    .menu.is-open & {
+        opacity: 1;
+        transform: translateY(0) rotateZ(360deg);
+        transition: transform 500ms var(--animation-timing-function) 500ms,
+                opacity 1000ms var(--animation-timing-function) 500ms;
     }
 }
 

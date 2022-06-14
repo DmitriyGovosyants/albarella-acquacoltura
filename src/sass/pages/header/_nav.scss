@@ -11,10 +11,45 @@
 }
 
 .nav__item {
+    @include mq(notDesktop) {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
     @include mq(desktop) {
 
         &:not(:last-child) {
             margin-right: 10px;
+        }
+    }
+
+    .menu.is-open & {
+        opacity: 1;
+        transform: translateY(0);
+
+        &:nth-child(1) {
+            transition: transform 300ms var(--animation-timing-function) var(--animation-duration),
+                    opacity 300ms var(--animation-timing-function) var(--animation-duration);
+        }
+        &:nth-child(2) {
+            transition: transform 400ms var(--animation-timing-function) var(--animation-duration),
+                opacity 400ms var(--animation-timing-function) var(--animation-duration);
+        }
+        &:nth-child(3) {
+            transition: transform 500ms var(--animation-timing-function) var(--animation-duration),
+                opacity 500ms var(--animation-timing-function) var(--animation-duration);
+        }
+        &:nth-child(4) {
+            transition: transform 600ms var(--animation-timing-function) var(--animation-duration),
+                opacity 600ms var(--animation-timing-function) var(--animation-duration);
+        }
+        &:nth-child(5) {
+            transition: transform 700ms var(--animation-timing-function) var(--animation-duration),
+                opacity 700ms var(--animation-timing-function) var(--animation-duration);
+        }
+        &:nth-child(6) {
+            transition: transform 800ms var(--animation-timing-function) var(--animation-duration),
+                opacity 800ms var(--animation-timing-function) var(--animation-duration);
         }
     }
 }

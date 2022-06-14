@@ -24,19 +24,18 @@
 
 .address {
     text-align: center;
+    font-style: normal;
 }
 
 .address__text {
     margin-bottom: 15px;
     font-size: 20px;
-    font-style: normal;
     color: var(--text-main);
 }
 
 .address__link {
     display: flex;
     justify-content: center;
-    align-items: baseline;
     margin: 0 auto;
     max-width: 300px;
     padding: 10px 20px;
