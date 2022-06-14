@@ -2,10 +2,10 @@ import { langData } from "./lang-data";
 const langMenuBtns = document.querySelectorAll('.js-lang-menu-btn');
 const allLang = ['it', 'en'];
 
-langMenuBtns.forEach(btn => btn.addEventListener('click', onLangToIt))
+langMenuBtns.forEach(btn => btn.addEventListener('click', onLangSwitch))
 
-function onLangToIt(e) {
-    const currentLang = e.target.textContent
+function onLangSwitch(e) {
+    const currentLang = e.target.textContent;
     location.href = window.location.pathname + '#' + currentLang;
     location.reload();
 }

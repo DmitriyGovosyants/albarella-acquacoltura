@@ -1,3 +1,9 @@
+.nav {
+    @include mq(desktop) {
+        margin: 0 auto;
+    }
+}
+
 .nav__list {
     @include mq(desktop) {
         display: flex;
