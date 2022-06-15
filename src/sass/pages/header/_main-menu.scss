@@ -29,6 +29,15 @@
     &.is-open {
         pointer-events: auto;
         transform: translateX(0);
+
+        @media screen and (max-height: 650px) {
+            overflow: scroll;
+            border-bottom-left-radius: 0px;
+        }
+    }
+
+    &.is-open {
+
     }
 }
 
