@@ -1,5 +1,8 @@
 import throttle from "lodash.throttle";
+import SmoothScroll from "smooth-scroll";
 import {refs} from './refs';
+
+const scroll = new SmoothScroll();
 
 document.addEventListener('scroll', throttle(scrollTop, 500));
 refs.backToTopBtn.addEventListener('click', handleBackToTop);
@@ -13,6 +16,5 @@ function scrollTop() {
 }
 
 function handleBackToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    scroll.animateScroll(document.body, { speed: 500, easing: 'Linear' });
 }
