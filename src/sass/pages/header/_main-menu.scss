@@ -86,6 +86,8 @@
     background-color: transparent;
     opacity: 0;
     transform: translateX(-200%) rotateZ(0deg);
+    transition: transform 500ms var(--animation-timing-function) 500ms,
+            opacity 500ms var(--animation-timing-function) 500ms;
 
     @include mq(desktop) {
         display: none;
@@ -94,8 +96,6 @@
     .menu.is-open & {
         opacity: 1;
         transform: translateY(0) rotateZ(360deg);
-        transition: transform 500ms var(--animation-timing-function) 500ms,
-                opacity 1000ms var(--animation-timing-function) 500ms;
     }
 }
 
